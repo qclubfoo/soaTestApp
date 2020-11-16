@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SoaTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ip4-wm-myW">
+                                <rect key="frame" x="10" y="54" width="394" height="694"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type text for saving here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="29f-Cd-trA">
+                                <rect key="frame" x="10" y="758" width="394" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="xNh-pg-VyX"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGk-Xs-gT0">
+                                <rect key="frame" x="10" y="812" width="177.5" height="30"/>
+                                <color key="backgroundColor" red="0.89411764709999997" green="0.90980392160000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Save"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rai-Nz-XIT">
+                                <rect key="frame" x="226.5" y="812" width="177.5" height="30"/>
+                                <color key="backgroundColor" red="0.45285022260000002" green="0.77148979900000003" blue="0.1750998795" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Load"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ip4-wm-myW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="4EW-qW-Y0q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eGk-Xs-gT0" secondAttribute="bottom" constant="20" id="4YX-Ji-tz5"/>
+                            <constraint firstItem="29f-Cd-trA" firstAttribute="width" secondItem="ip4-wm-myW" secondAttribute="width" id="7pP-Tz-4kz"/>
+                            <constraint firstItem="rai-Nz-XIT" firstAttribute="height" secondItem="eGk-Xs-gT0" secondAttribute="height" id="J8A-F1-o9M"/>
+                            <constraint firstItem="ip4-wm-myW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="RXI-EA-7aE"/>
+                            <constraint firstItem="29f-Cd-trA" firstAttribute="centerX" secondItem="ip4-wm-myW" secondAttribute="centerX" id="S9d-e4-b5S"/>
+                            <constraint firstItem="rai-Nz-XIT" firstAttribute="centerY" secondItem="eGk-Xs-gT0" secondAttribute="centerY" id="XTF-4q-9eh"/>
+                            <constraint firstItem="rai-Nz-XIT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eGk-Xs-gT0" secondAttribute="trailing" constant="20" id="ZJe-N0-npi"/>
+                            <constraint firstItem="eGk-Xs-gT0" firstAttribute="leading" secondItem="29f-Cd-trA" secondAttribute="leading" id="dXO-lk-cZJ"/>
+                            <constraint firstItem="rai-Nz-XIT" firstAttribute="width" secondItem="eGk-Xs-gT0" secondAttribute="width" id="gka-mP-JT4"/>
+                            <constraint firstItem="29f-Cd-trA" firstAttribute="top" secondItem="ip4-wm-myW" secondAttribute="bottom" constant="10" id="m4A-dC-XMi"/>
+                            <constraint firstItem="eGk-Xs-gT0" firstAttribute="width" secondItem="29f-Cd-trA" secondAttribute="width" multiplier="0.45" id="mgG-T0-zkG"/>
+                            <constraint firstItem="rai-Nz-XIT" firstAttribute="trailing" secondItem="29f-Cd-trA" secondAttribute="trailing" id="o9y-DZ-can"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ip4-wm-myW" secondAttribute="trailing" constant="10" id="wDd-oq-kiX"/>
+                            <constraint firstItem="eGk-Xs-gT0" firstAttribute="top" secondItem="29f-Cd-trA" secondAttribute="bottom" constant="20" id="wYN-wC-yA0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="loadButton" destination="rai-Nz-XIT" id="Gak-NL-K0z"/>
+                        <outlet property="saveButton" destination="eGk-Xs-gT0" id="b3i-V4-B9z"/>
+                        <outlet property="textField" destination="29f-Cd-trA" id="gkS-uZ-rzv"/>
+                        <outlet property="textView" destination="ip4-wm-myW" id="fCv-qR-nev"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+</document>
